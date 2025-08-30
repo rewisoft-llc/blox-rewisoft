@@ -17,6 +17,27 @@ After pushing changes to main branch, you need to update each downstream applica
        url: "/contact"
 ```
 ---
+### Landing Grid Cards
+![Landing Grid Cards](/img/landing-grid-cards.png)
+```
+- block: landing-grid-cards
+  id: best-fit
+  content:
+    title: Right Choice for Us?
+    subtitle: With its bespoke nature, Unity is good fit for anyone but certain companies will find more value in our services.
+    items:
+      - title: New to the Industry?
+        text: 'Most vendors push their own niche products, which can overwhelm newcomers. We learn your business, design a solution that removes complexity, and keep you focused on growth. When it’s time to scale or upgrade, we’ll help you choose the right vendors, manage the transition, and ensure everything runs seamlessly from start to finish.'
+        feature_icon: check
+        features: []
+        image: img/good-fit-section/overwhelming.png
+      - title: Longstanding company ready to modernize?
+        text: AdTech’s growing complexity can force businesses to change processes that already work. Unity bridges your current workflows with modern AdTech, letting you adapt without a full overhaul. When you’re ready to integrate more deeply, we ensure a smooth, strategic transition—helping you modernize at your own pace without sacrificing what makes your business successful.
+        feature_icon: bolt
+        features: []
+        image: img/good-fit-section/modernize.png
+```
+---
 ### Landing Stats
 ![Landing Stats](/img/landing-stats.png)
 ```
