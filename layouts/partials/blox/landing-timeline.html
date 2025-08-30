@@ -1,0 +1,38 @@
+{{/* Hugo Blox: Landing Timeline */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div class="py-8 px-4 mx-auto max-w-screen-md sm:py-16 lg:px-6" >
+  <div class="text-center">
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+      {{ $block.content.title }}
+    </h2>
+    <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+      {{ $block.content.subtitle }}
+    </p>
+  </div>
+
+  <div style="max-width: 30rem; margin: auto;">
+    <div class="hb-steps prose">
+      {{ range $idx, $item := $block.content.items }}
+        <h3>{{ $item.title }}</h3>
+        <p>{{ $item.description }}</p>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="text-center">
+    <p class="mb-6 font-bold dark:text-white md:text-lg">
+      {{ $block.content.footer_message }}
+    </p>
+  </div>
+
+  {{ if $block.content.link }}
+    <div class="text-center prose">
+      <a href="{{$block.content.link.url}}">{{ $block.content.link.label }}</a>
+    </div>
+  {{ end }}
+</div>
