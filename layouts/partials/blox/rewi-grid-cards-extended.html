@@ -18,7 +18,7 @@
     {{ errorf "%s uses the `cta-image-paragraph` blox which specifies a non-existent `image` at `assets/%s`. Please add the image to this folder and try again." $page.File.Path $image_path }}
   {{ end }}
   <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">{{$title}}</h2>
+    <h2 class="mb-4 text-4xl tracking-tight font-medium text-gray-900 dark:text-white md:hidden">{{$title}}</h2>
     <img class="w-full rounded-3xl" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}" {{ if (modBool $idx 2)}}style="order: 1"{{end}}>
     <div class="mt-4 md:mt-0">
       <h2 class="mb-4 text-4xl tracking-tight font-medium text-gray-900 dark:text-whitem hidden md:block">{{$title}}</h2>
