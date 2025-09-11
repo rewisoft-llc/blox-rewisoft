@@ -8,16 +8,25 @@ imports:
 
 2. Run Maintenance step for your site.
 
+# Development
+## Reusing a pre-existing block
+When possible, we recommend starting from an existing block from the demos:
+1. (Go to tailwind blocks)[https://github.com/HugoBlox/hugo-blox-builder/tree/main/modules/blox-tailwind/blox]
+2. Copy the content of the block you want to modify.
+3. Create a new file in `blox-rewisoft/layouts/partials/blox`. The filename will be the name of the block.
+4. Paste the content from step 2 into the file.
+5. Make your changes. 
+
 # Maintenance
 After pushing changes to main branch, you need to update each downstream application to pull in latest changes:
 1. Open terminal from the app's root directory
 2. Run `hugo mod get github.com/rewisoft-llc/blox-rewisoft`
 
-# Configuration
+# Blox
 ### Landing CTA Simple
-![Landing CTA Simple](/img/landing-cta-simple.png)
+![Landing CTA Simple](/img/rewi-cta-simple.png)
 ```
-- block: landing-cta-simple
+- block: rewi-cta-simple
   id: <HTML element id>
   content:
     title: "Let's Get To Work"
@@ -28,9 +37,9 @@ After pushing changes to main branch, you need to update each downstream applica
 ```
 ---
 ### Landing Grid Cards
-![Landing Grid Cards](/img/landing-grid-cards.png)
+![Landing Grid Cards](/img/rewi-grid-cards.png)
 ```
-- block: landing-grid-cards
+- block: rewi-grid-cards
   id: best-fit
   content:
     title: Right Choice for Us?
@@ -49,9 +58,9 @@ After pushing changes to main branch, you need to update each downstream applica
 ```
 ---
 ### Landing Stats
-![Landing Stats](/img/landing-stats.png)
+![Landing Stats](/img/rewi-stats.png)
 ```
-- block: landing-stats
+- block: rewi-stats
   content:
     title: "Proven Success"
     text: "Our client success team brings years of experience building, launching, and maintaining AdOps solutions for large DOOH networks. "
@@ -65,9 +74,9 @@ After pushing changes to main branch, you need to update each downstream applica
 ```
 ---
 ### Landing Timeline
-![Landing Timeline](/img/landing-timeline.png)
+![Landing Timeline](/img/rewi-timeline.png)
 ```
-- block: landing-timeline
+- block: rewi-timeline
   content:
     title: What to Expect
     subtitle: Our process is designed to minimize risk, speed up delivery, and ensure long-term maintainability
