@@ -21,7 +21,7 @@
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">{{$title}}</h2>
     <img class="w-full rounded-3xl" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}" {{ if (modBool $idx 2)}}style="order: 1"{{end}}>
     <div class="mt-4 md:mt-0">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-whitem hidden md:block">{{$title}}</h2>
+      <h2 class="mb-4 text-4xl tracking-tight font-medium text-gray-900 dark:text-whitem hidden md:block">{{$title}}</h2>
       <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{{$text}}</p>
       {{ $icon := .feature_icon | default "check" }}
       {{ if .features }}
