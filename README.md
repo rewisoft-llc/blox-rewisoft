@@ -57,6 +57,25 @@ After pushing changes to main branch, you need to update each downstream applica
         image: img/good-fit-section/modernize.png
 ```
 ---
+### Landing Grid Cards (Extended)
+![Landing Grid Cards Extended](/img/rewi-grid-cards-extended.png)
+```
+block: rewi-grid-cards-extended
+id: <section-id>
+content:
+  items:
+    - title: Inventory Manager
+      text: 'Take control of your entire screen network with a single, intelligent platform. Our IMS makes it easy to configure and manage your devices—defining availability, capacity, content restrictions, and more—while reducing the risk of costly errors. Guided and automated updates keep everything in sync, so your operations run smoothly.'
+      feature_icon: check
+      features: [
+        'Aggregate your devices into a single catalog'
+        , 'Cascade changes to downstream components'
+        , "Use AI to maintain your network's health"
+      ]
+      image: img/features/inventory-manager.png
+```
+- Recommend making the image a square
+---
 ### Landing Stats
 ![Landing Stats](/img/rewi-stats.png)
 ```
